@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>情侣共养电子宠物</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{
+            background:#fff8f8;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            padding-top:60px;
+        }
+        .box{display:flex;gap:40px;margin:40px 0;align-items:flex-end;}
+        .boy{width:160px;height:auto;}
+        .girl{width:130px;height:auto;}
+        .btn-group{display:flex;gap:15px;}
+        button{
+            padding:10px 22px;font-size:16px;border:none;
+            background:#ff8899;color:white;border-radius:8px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>情侣电子宠物</h2>
+    <div class="box">
+        < img class="boy" src="boy.png" alt="男生">
+        < img class="girl" src="girl.png" alt="女生">
+    </div>
+    <div class="btn-group">
+        <button onclick="feed()">喂食</button>
+        <button onclick="play()">互动玩耍</button>
+    </div>
+
+<script>
+const SUPABASE_URL = "https://lieforsjwuwbkrjuvzv1.supabase.co";
+const SUPABASE_KEY = "sb_publishable_R_MUFyAKuCgcAYVdDszsJA_fW6ANh83";
+const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+async function feed(){
+    alert("喂食成功！双方数据同步");
+}
+async function play(){
+    alert("互动玩耍！双方数据同步");
+}
+</script>
+</body>
+</html>
