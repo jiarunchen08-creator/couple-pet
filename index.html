@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>情侣共养电子宠物</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{
+            background:#fff8fa;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            padding-top:60px;
+            font-family:sans-serif;
+        }
+        h2{margin-bottom:40px;color:#444;}
+        .box{display:flex;gap:40px;align-items:center;}
+        .boy{width:160px;}
+        .girl{width:130px;}
+        .btn-group{margin-top:40px;display:flex;gap:20px;}
+        button{
+            padding:10px 24px;
+            border:none;
+            border-radius:999px;
+            background:#ff88aa;
+            color:white;
+            font-size:16px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>情侣电子宠物</h2>
+    <div class="box">
+        < img class="boy" src="boy.png" alt="男生">
+        < img class="girl" src="girl.png" alt="女生">
+    </div>
+    <div class="btn-group">
+        <button onclick="feed()">喂食</button>
+        <button onclick="play()">互动玩耍</button>
+    </div>
+
+<script>
+function feed(){
+    alert("喂食成功！");
+}
+function play(){
+    alert("一起玩耍啦！");
+}
+</script>
+</body>
+</html>
